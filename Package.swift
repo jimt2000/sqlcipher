@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "sqlcipher",
+    name: "SQLCipher",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "sqlcipher",
+            name: "SQLCipher",
             targets: ["SQLCipher"]),
     ],
     dependencies: [
@@ -37,6 +37,6 @@ let package = Package(
         ),
         .testTarget(
             name: "SQLCipherTests",
-            dependencies: ["sqlcipher"]),
+            dependencies: ["SQLCipher"]),
     ]
 )
